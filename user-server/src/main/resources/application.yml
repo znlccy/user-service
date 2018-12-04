@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: user-service
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/db_dining?characterEncoding=utf-8&useSSL=false
+    username: root
+    password: root
+
+server:
+  port: 8083
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:8761/eureka/
+#  instance:
+#    ip-address: user
